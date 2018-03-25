@@ -1,0 +1,5 @@
+
+4 - Display data for all classes whose title (when converted to all lowercase letters) begins with "intro".
+SELECT *
+	FROM public.classes LEFT JOIN public.courses ON public.classes.courseid = public.courses.courseid 
+	where lower(title) LIKE 'intro%' ;
